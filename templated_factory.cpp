@@ -1,20 +1,17 @@
 #include <string>
 #include "TObjFactory.hpp"
 
-class Base
-{
+class Base {
 public:
      virtual void test(void) = 0;
 };
  
-class classA : public Base
-{
+class classA : public Base {
 public:
      virtual void test(void) { std::cout << 'A' << std::endl; }
 };
  
-class classB : public Base
-{
+class classB : public Base {
 public:
      virtual void test(void) { std::cout << 'B' << std::endl; }
 };
